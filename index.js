@@ -1,4 +1,4 @@
-//Ejemplo de funcion asincrona
+//ESTE CODIGO SE CARGO EN GITHUB
 
 async function funcionAsincrona() {
   const promesa = await fetch("https://api.nasa.gov/planetary/apod", {
