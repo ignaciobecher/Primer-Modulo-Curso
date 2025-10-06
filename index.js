@@ -1,14 +1,11 @@
-//ESTE CODIGO SE CARGO EN GITHUB
-
-async function funcionAsincrona() {
-  const promesa = await fetch("https://api.nasa.gov/planetary/apod", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const data = await promesa.json();
-  console.log(data);
+function createProduct(name, price) {
+  try {
+    if (!name) {
+      throw new Error("Nombre requerido");
+    }
+  } catch (error) {
+    console.log(error);
+  }finally{
+    console.log("Ejecución finalizada");
+  }
 }
-
-funcionAsincrona();
